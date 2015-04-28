@@ -92,7 +92,7 @@ Note that this function is _not_ tail recursive.  Here is some sample output.
 1
 6> powers:raise(2, -3).
 0.125
-------
+-------
 
 <<SOLUTION04-ET03,See a suggested solution in Appendix A.>>
 
