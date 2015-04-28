@@ -57,7 +57,7 @@ R)ectangle, T)riangle, or E)llipse > e
 Enter major axis > three
 Enter minor axis > 2
 Error in first number.
-----
+-------
 
 Here are the functions that I needed to write in order to make this
 program work.
