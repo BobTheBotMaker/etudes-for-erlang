@@ -188,7 +188,7 @@ squares(Numbers) -> squares(Numbers, []).
 squares([], Result) -> Result;
 
 squares([H | T], Result) -> squares(T, [Result | H * H ]).
-----
+------
 
 The resulting list was in the correct order, but it was an improper list.
 
@@ -231,7 +231,7 @@ I could fix the problem by changing one line to flatten the final result.
 [source, erlang]
 ------
 squares2([], Result) -> lists:flatten(Result);
-----
+------
 
 That worked, but it wasn't a satisfying solution.
 
@@ -255,7 +255,7 @@ correct_squares([], Result) -> lists:reverse(Result);
 
 correct_squares([H | T], Result) ->
   correct_squares(T, [H * H | Result]).
-----
+------
 
 [source,erl]
 -----
@@ -263,7 +263,7 @@ correct_squares([H | T], Result) ->
 {ok,good_code}
 2> good_code:correct_squares([9, 4.22, 5]).
 [81,17.8084,25]
-----
+-----
 
 Success at last!  The moral of the story?
 
@@ -336,7 +336,7 @@ distributed between 0 and 1.0 by typing this in +erl+:
 -----
 1> random:uniform().
 0.4435846174457203
-------
+-----
 
 Now, exit +erl+, restart, and type the same command again. You'll get the
 same number. In order to ensure that you get different sets of random numbers,
@@ -366,7 +366,7 @@ random number generator wasn't seeded before.
 undefined
 2> random:uniform().
 0.27846009966109264
------
+------
 
 If you want to generate a random integer between 1 and +N+, use
 +uniform/1+; thus +random:uniform(10)+ will generate a
