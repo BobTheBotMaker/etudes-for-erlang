@@ -207,7 +207,6 @@ When you run this function, your output will not show the entire list; it will
 show something that ends like this. Don't freak out.
 
 [literal]
-
 {7,"Clubs"},
 {7,"Diamonds"},
 {7,[...]},
@@ -237,7 +236,7 @@ shuffle([], Acc) -> Acc;
 shuffle(List, Acc) ->
   {Leading, [H | T]} = lists:split(random:uniform(length(List)) - 1, List),
   shuffle(Leading ++ T, [H | Acc]).
-----
+-----
 
 Wait a moment. If I've just given you the code, what's the purpose
 of this étude? I want you to understand the code. The object of this
