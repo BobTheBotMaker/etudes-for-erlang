@@ -727,7 +727,7 @@ Steve (sales@localhost) says: "oops, gotta run."
 (marketing@localhost)5> person:users().
 [{"David",engineering@localhost},
  {"Michele",marketing@localhost}]
-----
+------
 
 <<SOLUTION11-ET04,See a suggested solution in Appendix A.>>
 
