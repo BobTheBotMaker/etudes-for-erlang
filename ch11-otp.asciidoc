@@ -664,7 +664,7 @@ And here are three other servers talking to one another and setting
 profile information.
 
 [source, erl]
--------    
+-------
 erl -sname sales
 
 (sales@localhost)1> person:start_link(lobby@localhost).
@@ -682,7 +682,7 @@ Michele (marketing@localhost) says: "New product launch is next week."
 ok
 (sales@localhost)6> person:logout().
 ok
-------
+-------
 
 [source, erl]
 -------
