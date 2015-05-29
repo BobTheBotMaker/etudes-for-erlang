@@ -658,7 +658,7 @@ Recipient list: [{"David",engineering@localhost},
 Recipient list: [{"David",engineering@localhost},{"Steve",sales@localhost}] 
 Recipient list: [{"David",engineering@localhost},
                  {"Michele",marketing@localhost}]
------
+-------
 
 And here are three other servers talking to one another and setting
 profile information.
@@ -706,10 +706,10 @@ Michele (marketing@localhost) says: "New product launch is next week."
  {"Steve",sales@localhost},
  {"Michele",marketing@localhost}]
 Steve (sales@localhost) says: "oops, gotta run."
-------
+-------
 
 [source, erl]
-------
+-------
 erl -sname marketing
 
 (marketing@localhost)1> person:start_link(lobby@localhost).
@@ -727,7 +727,7 @@ Steve (sales@localhost) says: "oops, gotta run."
 (marketing@localhost)5> person:users().
 [{"David",engineering@localhost},
  {"Michele",marketing@localhost}]
-------
+-------
 
 <<SOLUTION11-ET04,See a suggested solution in Appendix A.>>
 
